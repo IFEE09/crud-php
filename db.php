@@ -1,15 +1,9 @@
 <?php
     $conn = mysqli_connect(
-        'localhost',
+        'localhost:8888',
         'root',
         '',
         'php_mysql_crud'
     );
-
-    if(isset($conn)) {
-        echo 'DB is connected!';
-    } else {
-        echo 'DB is not connected :(';
-    }
 ?>
 
