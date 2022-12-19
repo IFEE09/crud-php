@@ -1,7 +1,7 @@
 <?php
 
 $host = "localhost:3306";
-$dbName = "nombres";
+$dbName = "php_mysql_crud";
 $userName = "root";
 $password = "12345678";
 

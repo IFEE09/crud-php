@@ -9,6 +9,7 @@ if(isset($_POST['save_task'])) {
     echo $title . ' ' . $description;
 
     $query = "INSERT INTO task(title, description) VALUES ('$title', '$description')";
+    $conn = require __DIR__ . "/db.php";
     $result = mysqli_query($conn, $query);
     
     if(!$result) {
