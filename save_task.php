@@ -19,7 +19,7 @@ if(isset($_POST['save_task'])) {
     $_SESSION['message'] = 'Task Saved Succesfully';
     $_SESSION['message_type'] = 'success';
 
-    header("location: index.php"); 
+    header("location: index.php");
 
 }
 
