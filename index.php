@@ -65,6 +65,9 @@
                                 <a href="./edit_task.php?id=<?php echo $column['id'] ?>">
                                     Edit
                                 </a>
+                                <a href="./delete_task.php?id=<?php echo $column['id'] ?>">
+                                    Delete
+                                </a>
                             </td>
                         </tr>
                     <?php } ?>
