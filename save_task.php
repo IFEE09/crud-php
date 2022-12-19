@@ -16,7 +16,10 @@ if(isset($_POST['save_task'])) {
         echo 'Saved in database';
     }
 
-    //header("location: index.php"); descomentar esta linea para redireccionar al index.php
+    $_SESSION['message'] = 'Task Saved Succesfully';
+    $_SESSION['message_type'] = 'success';
+
+    header("location: index.php"); 
 
 }
 
