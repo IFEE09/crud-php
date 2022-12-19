@@ -31,7 +31,47 @@
             </div>
         </div>
         <div class="col-md-8">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Created At</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
 
+                <tbody>
+                    <?php
+                    $query = "SELECT * FROM task";
+                    $result_tasks = mysqli_query($conn, $query);
+
+                    while($column = mysqli_fetch_array($result_tasks)) { ?>
+                        <tr>
+                            <td>
+                                <?php echo $column['id'] ?>
+                            </td>
+                            <td>
+                                <?php echo $column['title'] ?>
+                            </td>
+                            <td>
+                                <?php echo $column['description'] ?>
+                            </td>
+                            <td>
+                                <?php echo $column['created_at'] ?>
+                            </td>
+                            <td>
+                                <a href="./edit_task.php?id=<?php echo $column['id'] ?>">
+                                    Edit
+                                </a>
+                            </td>
+                        </tr>
+                    <?php } ?>
+                </tbody>
+
+
+            </table>    
         </div>
     </div>
 </div>
