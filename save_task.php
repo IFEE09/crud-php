@@ -16,6 +16,8 @@ if(isset($_POST['save_task'])) {
         echo 'Saved in database';
     }
 
+    //header("location: index.php"); descomentar esta linea para redireccionar al index.php
+
 }
 
 ?>

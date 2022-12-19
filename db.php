@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $host = "localhost:3306";
 $dbName = "php_mysql_crud";
 $userName = "root";
