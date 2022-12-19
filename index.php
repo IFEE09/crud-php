@@ -11,11 +11,11 @@
             <div class="card card-body">
 
                 <?php if (isset($_SESSION['message'])) { ?>
-                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                        <?php= $_SESSION['message'];?>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        Task Saved Succesfully
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
-                <?php } ?>
+                <?php session_unset(); } ?>
 
                 <form action="save_task.php" method="POST">
                     <div class="form-group">
