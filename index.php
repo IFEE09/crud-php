@@ -63,10 +63,10 @@
                             </td>
                             <td>
                                 <a href="./edit_task.php?id=<?php echo $column['id'] ?>">
-                                    Edit
-                                </a>
-                                <a href="./delete_task.php?id=<?php echo $column['id'] ?>">
-                                    Delete
+                                    <i class="fas fa-marker"></i>
+                                </a> &nbsp; &nbsp;
+                                <a style="color: red;" href="./delete_task.php?id=<?php echo $column['id'] ?>">
+                                    <i class="fas fa-trash"></i>
                                 </a>
                             </td>
                         </tr>
