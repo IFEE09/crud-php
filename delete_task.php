@@ -11,6 +11,9 @@ if(isset($_GET['id'])) {
     } else {
         header("location: index.php");
     }
+
+    $_SESSION['message'] = 'Task Deleted Succesfully';
+    $_SESSION['message_type'] = 'danger';
 } 
 
 ?>
