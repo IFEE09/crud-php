@@ -12,6 +12,9 @@ if (isset($_GET['id'])) {
         $description = $row['description'];
     }
 
+    $_SESSION['message'] = "Task Updated Succesfully";
+    $_SESSION['message_type'] = "warning";
+
 }
 
 if (isset($_POST['update'])) {
@@ -34,11 +37,12 @@ if (isset($_POST['update'])) {
             <div class="card card-body">
                 <form action="edit_task.php?id=<?php echo $_GET['id']; ?>" method="POST">
                     <div class="form-group">
-                        <input type="text" name="title" value="<?php echo "title"; ?>" class="form-control"
+                        <input type="text" name="title" value="<?php echo $title; ?>" class="form-control"
                             placeholder="Update Title">
                     </div> <br>
                     <div class="form-group">
-                        <textarea name="description" id="" rows="2" cols="34" rows="10"></textarea>
+                        <textarea name="description" id="" rows="2" cols="34" rows="10"><?php
+                        echo $description; ?></textarea>
                     </div> <br>
                     <button class="btn btn-success" name="update">
                         Update
