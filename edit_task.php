@@ -22,7 +22,7 @@ if(isset($_GET['id'])) {
     <div class="row">
         <div class="col-md-4 mx-auto">
             <div class="card card-body">
-                <form action="edit.php?id=<?php echo $_GET['id']; ?>">
+                <form action="edit.php?id=<?php echo $_GET['id']; ?>" method="POST">
                     <div class="form-group">
                         <input type="text" name="title" value="<?php echo "title"; ?>" class="form-control" placeholder="Update Title"> <br>
                     </div>
