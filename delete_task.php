@@ -9,7 +9,7 @@ if(isset($_GET['id'])) {
     if(!$result) {
         die("Query Failed");
     } else {
-        header("location: header.php");
+        header("location: index.php");
     }
 } 
 
